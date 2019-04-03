@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="github" fetch="https://github.com/JeffyCN/" />
+
+  <default revision="rocko" sync-j="8" sync-c="true" />
+
+  <notice>
+Your sources have been sync'd successfully.
+  </notice>
+
+  <project path="poky"
+           remote="yocto" name="poky" >
+           <linkfile src="scripts" dest="scripts" />
+           <linkfile src="bitbake" dest="bitbake" />
+           <linkfile src="meta-poky" dest="meta-poky" />
+           <linkfile src=".templateconf" dest=".templateconf" />
+           <linkfile src="oe-init-build-env" dest="oe-init-build-env" />
+	   <linkfile src="../.repo/manifests/README.md" dest="README.md" />
+  </project>
+
+  <project path="meta-openembedded"
+           remote="oe" name="meta-openembedded" />
+
+  <project path="meta-rockchip"
+           remote="github" name="meta-rockchip" revision="master" />
+
+  <project path="build/conf"
+           remote="github" name="yocto-conf" revision="master" />
+</manifest>

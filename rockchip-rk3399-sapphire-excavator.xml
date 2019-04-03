@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="default.xml" />
+
+  <remove-project name="yocto-conf" />
+  <project path="build/conf"
+           remote="github" name="yocto-conf" revision="master" >
+           <linkfile src="rockchip-rk3399-sapphire-excavator.conf"
+                     dest="build/conf/local.conf" />
+  </project>
+</manifest>
