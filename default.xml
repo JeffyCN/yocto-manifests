@@ -4,7 +4,7 @@
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="github" fetch="https://github.com/JeffyCN/" />
 
-  <default revision="rocko" sync-j="8" sync-c="true" />
+  <default revision="thud" sync-j="8" sync-c="true" />
 
   <notice>
 Your sources have been sync'd successfully.
