@@ -2,6 +2,7 @@
 <manifest>
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="qt5" fetch="https://github.com/meta-qt5" />
   <remote name="github" fetch="https://github.com/JeffyCN/" />
 
   <default revision="thud" sync-j="8" sync-c="true" />
@@ -22,6 +23,8 @@ Your sources have been sync'd successfully.
 
   <project path="meta-openembedded"
            remote="oe" name="meta-openembedded" />
+
+  <project path="meta-qt5" remote="qt5" name="meta-qt5" />
 
   <project path="meta-rockchip"
            remote="github" name="meta-rockchip" revision="master" />
