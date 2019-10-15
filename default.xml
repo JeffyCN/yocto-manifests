@@ -3,6 +3,7 @@
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="qt5" fetch="https://github.com/meta-qt5" />
+  <remote name="clang" fetch="https://github.com/kraj" />
   <remote name="browser" fetch="https://github.com/OSSystems" />
   <remote name="rust" fetch="https://github.com/meta-rust" />
   <remote name="github" fetch="https://github.com/JeffyCN/" />
@@ -27,6 +28,8 @@ Your sources have been sync'd successfully.
            remote="oe" name="meta-openembedded" />
 
   <project path="meta-qt5" remote="qt5" name="meta-qt5" />
+
+  <project path="meta-clang" remote="clang" name="meta-clang" />
 
   <project path="meta-browser"
            remote="browser" name="meta-browser" revision="master" />
