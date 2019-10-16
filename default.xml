@@ -9,15 +9,15 @@
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="thud" sync-c="true" sync-j="8"/>
+  <default sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-qt5" remote="qt5"/>
-  <project name="meta-rockchip" remote="github" revision="master"/>
-  <project name="meta-rust" remote="rust" revision="master"/>
-  <project name="poky" remote="yocto">
+  <project name="meta-browser" remote="browser" revision="21123de2a81b35d477509c0a00735a08d56bcf26" upstream="master"/>
+  <project name="meta-clang" remote="clang" revision="d87c406c0f54e0e1ad4fb6aa2d0ecba93136139d" upstream="master"/>
+  <project name="meta-openembedded" remote="oe" revision="1bfaa2e63a184e21a2db5c286444828d5948a8b4" upstream="zeus"/>
+  <project name="meta-qt5" remote="qt5" revision="911b346b0d5098ef08f99c7efa5637457ee11d77" upstream="zeus"/>
+  <project name="meta-rockchip" remote="github" revision="e5bad218f034e7c7b4963c27b6561a201a3c9229" upstream="release-1.1.0_20191030"/>
+  <project name="meta-rust" remote="rust" revision="5cda04c7c2158fc982502ca1e7893f71e4ca1729" upstream="master"/>
+  <project name="poky" remote="yocto" revision="72e9458dba230e4072f4a75bf3c12a88c8f64969" upstream="zeus">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
@@ -25,5 +25,5 @@
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
     <linkfile dest="README.md" src="../.repo/manifests/README.md"/>
   </project>
-  <extend-project name="yocto-conf" path="build/conf" remote="github" revision="master"/>
+  <extend-project name="yocto-conf" path="build/conf" remote="github" revision="b0154fa414287f5fe6324ac8550dabb822934dc9" upstream="master"/>
 </manifest>
