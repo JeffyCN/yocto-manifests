@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="yocto" fetch="git://git.yoctoproject.org" />
-  <remote name="oe" fetch="git://git.openembedded.org" />
-  <remote name="qt5" fetch="https://github.com/meta-qt5" />
-  <remote name="clang" fetch="https://github.com/kraj" />
-  <remote name="browser" fetch="https://github.com/OSSystems" />
-  <remote name="rust" fetch="https://github.com/meta-rust" />
-  <remote name="github" fetch="https://github.com/JeffyCN/" />
+  <notice>Your sources have been sync'd successfully.</notice>
+  <remote fetch="https://github.com/OSSystems" name="browser"/>
+  <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/JeffyCN/" name="github"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="https://github.com/meta-rust" name="rust"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="thud" sync-j="8" sync-c="true" />
+  <default revision="thud" sync-c="true" sync-j="8"/>
 
-  <notice>
-Your sources have been sync'd successfully.
-  </notice>
-
-  <project path="poky"
-           remote="yocto" name="poky" >
-           <linkfile src="scripts" dest="scripts" />
-           <linkfile src="bitbake" dest="bitbake" />
-           <linkfile src="meta-poky" dest="meta-poky" />
-           <linkfile src=".templateconf" dest=".templateconf" />
-           <linkfile src="oe-init-build-env" dest="oe-init-build-env" />
-	   <linkfile src="../.repo/manifests/README.md" dest="README.md" />
+  <project name="meta-browser" remote="browser" revision="master"/>
+  <project name="meta-clang" remote="clang"/>
+  <project name="meta-openembedded" remote="oe"/>
+  <project name="meta-qt5" remote="qt5"/>
+  <project name="meta-rockchip" remote="github" revision="master"/>
+  <project name="meta-rust" remote="rust" revision="master"/>
+  <project name="poky" remote="yocto">
+    <linkfile dest="scripts" src="scripts"/>
+    <linkfile dest="bitbake" src="bitbake"/>
+    <linkfile dest="meta-poky" src="meta-poky"/>
+    <linkfile dest=".templateconf" src=".templateconf"/>
+    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
+    <linkfile dest="README.md" src="../.repo/manifests/README.md"/>
   </project>
-
-  <project path="meta-openembedded"
-           remote="oe" name="meta-openembedded" />
-
-  <project path="meta-qt5" remote="qt5" name="meta-qt5" />
-
-  <project path="meta-clang" remote="clang" name="meta-clang" />
-
-  <project path="meta-browser"
-           remote="browser" name="meta-browser" revision="master" />
-
-  <project path="meta-rust"
-           remote="rust" name="meta-rust" revision="master" />
-
-  <project path="meta-rockchip"
-           remote="github" name="meta-rockchip" revision="master" />
-
-  <project path="build/conf"
-           remote="github" name="yocto-conf" revision="master" />
+  <project name="yocto-conf" path="build/conf" remote="github" revision="master"/>
 </manifest>
