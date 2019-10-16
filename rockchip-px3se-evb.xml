@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="default.xml" />
-
-  <remove-project name="yocto-conf" />
   <project path="build/conf"
            remote="github" name="yocto-conf" revision="master" >
            <linkfile src="rockchip-px3se-evb.conf"
                      dest="build/conf/local.conf" />
   </project>
+
+  <include name="default.xml" />
 </manifest>
