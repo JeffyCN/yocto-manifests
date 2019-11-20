@@ -6,5 +6,5 @@
                      dest="build/conf/local.conf" />
   </project>
 
-  <include name="default.xml" />
+  <include name="yocto.xml" />
 </manifest>
