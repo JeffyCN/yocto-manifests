@@ -23,7 +23,6 @@
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
-    <linkfile dest="README.md" src="../.repo/manifests/README.md"/>
   </project>
   <extend-project name="yocto-conf" path="build/conf" remote="github" revision="master"/>
 </manifest>
