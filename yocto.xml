@@ -9,7 +9,7 @@
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="warrior" sync-c="true" sync-j="8"/>
+  <default revision="zeus" sync-c="true" sync-j="8"/>
 
   <project name="meta-browser" remote="browser"/>
   <project name="meta-clang" remote="clang"/>
