@@ -14,7 +14,7 @@
   <project name="meta-browser" remote="browser"/>
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-python2" remote="oe"/>
+  <project name="meta-python2" remote="oe" revision="zeus"/>
   <project name="meta-qt5" remote="qt5"/>
   <project name="meta-rockchip" remote="github" revision="master"/>
   <project name="meta-rust" remote="rust" revision="master"/>
