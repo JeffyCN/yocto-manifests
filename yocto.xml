@@ -8,22 +8,22 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-
+  
   <default revision="zeus" sync-c="true" sync-j="8"/>
-
-  <project name="meta-browser" remote="browser"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-python2" remote="oe"/>
-  <project name="meta-qt5" remote="qt5"/>
-  <project name="meta-rockchip" remote="github" revision="master"/>
-  <project name="meta-rust" remote="rust" revision="master"/>
-  <project name="poky" remote="yocto">
+  
+  <project dest-branch="zeus" name="meta-browser" remote="browser" revision="830ef438e81ba5fc915b1855e69f02b2c286b21a"/>
+  <project dest-branch="zeus" name="meta-clang" remote="clang" revision="711e593d5984aad3bf35c51b7ac4482982bc16c7"/>
+  <project dest-branch="zeus" name="meta-openembedded" remote="oe" revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"/>
+  <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
+  <project dest-branch="zeus" name="meta-qt5" remote="qt5" revision="1861b68525dc8566be6bc8d70e4359a3b589e4ca"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="40971ea7755ec777ff811571fca69c4e93415b94"/>
+  <project dest-branch="master" name="meta-rust" remote="rust" revision="7f235b6f8973cc5269448375f2a8f9867bb2a369"/>
+  <project dest-branch="zeus" name="poky" remote="yocto" revision="5408e48d374fc741fa46b57ddfd8a537843bda6f">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project name="yocto-conf" path="build/conf" remote="github" revision="master"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="d6c988d57b06448abf3472d9be775902477176d2"/>
 </manifest>
