@@ -13,10 +13,10 @@
   
   <project dest-branch="master" name="meta-browser" remote="browser" revision="fed14c63ca12ff2a6bb24bdf7d7885e9b14c9513"/>
   <project dest-branch="master" name="meta-clang" remote="clang" revision="352807b154e55f7af88d3817f682c54c406498bb"/>
-  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="c32d2eb448ce343463dc75cc6120f395e32f0177"/>
+  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="f46931abf073a4c5b02a160a89fe073f1b67632b"/>
   <project dest-branch="master" name="meta-python2" remote="oe" revision="285c7a0140b91d3b1b6a0248dd703c668a8fe1de"/>
   <project dest-branch="master" name="meta-qt5" remote="qt5" revision="5144a99a696a8a72c0765ea0e8be8ceafaa78f85"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="40971ea7755ec777ff811571fca69c4e93415b94"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="c3c25dd336c58088885226564a6c0459a2554da9"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="7f235b6f8973cc5269448375f2a8f9867bb2a369"/>
   <project dest-branch="master" name="poky" remote="yocto" revision="104ff3c834d9ea60de4600fca374c0bdc9ca843d">
     <linkfile dest="scripts" src="scripts"/>
