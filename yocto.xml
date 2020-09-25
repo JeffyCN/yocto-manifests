@@ -11,19 +11,19 @@
   
   <default revision="master" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="fed14c63ca12ff2a6bb24bdf7d7885e9b14c9513"/>
-  <project dest-branch="master" name="meta-clang" remote="clang" revision="2385d1cec5d371abf451b534c45fd48f9e7568ca"/>
-  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="bccd3277e4b809f7a5fe517c16f5d45e753ce0e4"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="20bd7d432e239a90c028506e0841d5c79725c99f"/>
+  <project dest-branch="master" name="meta-clang" remote="clang" revision="9c8f56ceabfbf04590217d678f996b974996d414"/>
+  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="d8826b63b8c4c34b5ffd31a65aa21843ea9bee66"/>
   <project dest-branch="master" name="meta-python2" remote="oe" revision="7b18fa3ead2c1a98e0f4e01ab57027f57d362c04"/>
   <project dest-branch="master" name="meta-qt5" remote="qt5" revision="2f17a26d2f4c50458f5b1b145e4462853369b559"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="1c2bd9e5c9c5fb2637708333c45d982b6c88fd51"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="2fed303dcf91288de7f96e6630a6a921475f8f40"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="318fb46863c0df5001f937bb4ca856491a493725"/>
-  <project dest-branch="master" name="poky" remote="yocto" revision="c6bc20857cd1bdfd25dfc50e413be84d1d12b189">
+  <project dest-branch="master" name="poky" remote="yocto" revision="fd17e5459d4f8eeb8004756a6c6c646ac2ac3bee">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="8ec513e39fe364a635e4db2703de15476f226eec"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="e252a6e877bbd3a11a8f99d4b97f0feb6b0b29d7"/>
 </manifest>
