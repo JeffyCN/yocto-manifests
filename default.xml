@@ -15,7 +15,7 @@
   <project name="meta-clang" remote="clang" revision="d87c406c0f54e0e1ad4fb6aa2d0ecba93136139d" upstream="master"/>
   <project name="meta-openembedded" remote="oe" revision="1bfaa2e63a184e21a2db5c286444828d5948a8b4" upstream="zeus"/>
   <project name="meta-qt5" remote="qt5" revision="911b346b0d5098ef08f99c7efa5637457ee11d77" upstream="zeus"/>
-  <project name="meta-rockchip" remote="github" revision="0e3f66e046a2fd29ce9b86f5f1380085fb1285db" upstream="release-1.1.0_20191030"/>
+  <project name="meta-rockchip" remote="github" revision="579ffdbfc86d891a868a65ad73b450f4645000cd"/>
   <project name="meta-rust" remote="rust" revision="5cda04c7c2158fc982502ca1e7893f71e4ca1729" upstream="master"/>
   <project name="poky" remote="yocto" revision="72e9458dba230e4072f4a75bf3c12a88c8f64969" upstream="zeus">
     <linkfile dest="scripts" src="scripts"/>
