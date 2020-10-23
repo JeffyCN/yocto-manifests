@@ -12,11 +12,11 @@
   <default revision="master" sync-c="true" sync-j="8"/>
   
   <project dest-branch="master" name="meta-browser" remote="browser" revision="5e07a7897945dd91d75169975178005d9d9aa200"/>
-  <project dest-branch="master" name="meta-clang" remote="clang" revision="2b9cdeb60d001ddcd034819384ea36b6b10f7208"/>
+  <project dest-branch="master" name="meta-clang" remote="clang" revision="6b224af8d109c5b5be23444423fc98246c94c055"/>
   <project dest-branch="master" name="meta-openembedded" remote="oe" revision="bb460fb3cbe1953c7b2f9a40d2226989e8b07670"/>
   <project dest-branch="master" name="meta-python2" remote="oe" revision="c43c29e57f16af4e77441b201855321fbd546661"/>
   <project dest-branch="master" name="meta-qt5" remote="qt5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="9df4da46da6fa167d1f8bbbaf61e750aceb2e05a"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="6c77fa3b42ec392e6581597a045a324fa21170d9"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
   <project dest-branch="master" name="poky" remote="yocto" revision="4e4a302e37ac06543e9983773cdb4caf7728330d">
     <linkfile dest="scripts" src="scripts"/>
