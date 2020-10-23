@@ -12,13 +12,13 @@
   <default revision="dunfell" sync-c="true" sync-j="8"/>
   
   <project dest-branch="master" name="meta-browser" remote="browser" revision="5e07a7897945dd91d75169975178005d9d9aa200"/>
-  <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="f76e171c27639eb329214b8eb278de595f86933e"/>
+  <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="eba7c48f131d8fd5a1d840949d8ead2ecfe65edc"/>
   <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="2a5c534d2b9f01e9c0f39701fccd7fc874945b1c"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="07dca1e54f82a06939df9b890c6d1ce1e3197f75"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="0e7015f7a86dda995a39662edbb5c26da647c496"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="9df4da46da6fa167d1f8bbbaf61e750aceb2e05a"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="6c77fa3b42ec392e6581597a045a324fa21170d9"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
-  <project dest-branch="dunfell" name="poky" remote="yocto" revision="2aed817e09567bd1812ce75e9fa95852ceec7a8a">
+  <project dest-branch="dunfell" name="poky" remote="yocto" revision="2181825a62efd9fdc843f820076096a760409b2d">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
