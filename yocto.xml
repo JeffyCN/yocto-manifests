@@ -16,7 +16,7 @@
   <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="d7b41ced4b9a9a68083b0fcceff3b226298cff8b"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="e2ef0dd8fa13d6b96e44773b09d07e4817d0a44d"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="0e7015f7a86dda995a39662edbb5c26da647c496"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="af04d75358c934d3448753044eb7379aa2b4238d"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="410aee93678cc49f25b0f2211aca0890075a5271"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="318fb46863c0df5001f937bb4ca856491a493725"/>
   <project dest-branch="dunfell" name="poky" remote="yocto" revision="87c9d296357638082f5a7131a87365285fc813c4">
     <linkfile dest="scripts" src="scripts"/>
