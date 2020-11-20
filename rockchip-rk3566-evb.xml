@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="build/conf"
+           remote="github" name="yocto-conf" revision="master" >
+           <linkfile src="rockchip-rk3566-evb.conf"
+                     dest="build/conf/local.conf" />
+  </project>
+
+  <include name="yocto.xml" />
+</manifest>
