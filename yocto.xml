@@ -11,19 +11,19 @@
   
   <default revision="master" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="5e07a7897945dd91d75169975178005d9d9aa200"/>
-  <project dest-branch="master" name="meta-clang" remote="clang" revision="6b224af8d109c5b5be23444423fc98246c94c055"/>
-  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="bb460fb3cbe1953c7b2f9a40d2226989e8b07670"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="423633196c7e4b68e1fd1338a2a21a429e76733e"/>
+  <project dest-branch="master" name="meta-clang" remote="clang" revision="1dfc3a905ad0fed7a3b300aa51153365f9950fe7"/>
+  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="50bbf80abf570d1d652ec2f4bc5878e939c688d3"/>
   <project dest-branch="master" name="meta-python2" remote="oe" revision="c43c29e57f16af4e77441b201855321fbd546661"/>
-  <project dest-branch="master" name="meta-qt5" remote="qt5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="6c77fa3b42ec392e6581597a045a324fa21170d9"/>
-  <project dest-branch="master" name="meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
-  <project dest-branch="master" name="poky" remote="yocto" revision="4e4a302e37ac06543e9983773cdb4caf7728330d">
+  <project dest-branch="master" name="meta-qt5" remote="qt5" revision="21ce4c124d9a972d9122f87c64ac2773bf04c284"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="19e6037c2b02bf1868c6e2fb88bcdb9a1d3e0186"/>
+  <project dest-branch="master" name="meta-rust" remote="rust" revision="f56fd4ec6835d68c4e9f8a9630963acd34d172e5"/>
+  <project dest-branch="master" name="poky" remote="yocto" revision="d8f47a68a92802fc47f297de05a0f2817963a7ee">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="97b32d39ff79f2759e0981c06d14361a748b2318"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="f42fc98d143c8670f1bbde252b98cf95e4d06595"/>
 </manifest>
