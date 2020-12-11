@@ -16,7 +16,7 @@
   <project dest-branch="warrior" name="meta-openembedded" remote="oe" revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"/>
   <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
   <project dest-branch="warrior" name="meta-qt5" remote="qt5" revision="6a9de2d841a528bc055140f50e99910fe651c74f"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="19e6037c2b02bf1868c6e2fb88bcdb9a1d3e0186"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="b12470af789129cee132b92810d02c7f7452fa11"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="f56fd4ec6835d68c4e9f8a9630963acd34d172e5"/>
   <project dest-branch="warrior" name="poky" remote="yocto" revision="c8c383d958807b991e31d22f612ba2a81a3860a4">
     <linkfile dest="scripts" src="scripts"/>
@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="f42fc98d143c8670f1bbde252b98cf95e4d06595"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="1130199ecf490f6fc3420c8ceb505d5182a63ee1"/>
 </manifest>
