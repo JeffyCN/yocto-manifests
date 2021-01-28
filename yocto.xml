@@ -11,19 +11,19 @@
   
   <default revision="gatesgarth" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="1205a4e517f3800dcbd82d007125eaf003ea225b"/>
-  <project dest-branch="master" name="meta-clang" remote="clang" revision="216da5f0313271257fc564fb86445cf9c62d0101"/>
-  <project dest-branch="gatesgarth" name="meta-openembedded" remote="oe" revision="b9dcf17700014dec679307dc1247882dccd439ca"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="d9b0cbeaf4280ff325a15441c701ea1f4a140b17"/>
+  <project dest-branch="master" name="meta-clang" remote="clang" revision="67a7cad4bb48ef569b4eeb4b3c923133d2d422a6"/>
+  <project dest-branch="gatesgarth" name="meta-openembedded" remote="oe" revision="6ff4bd4f345b4e8030b9197d13097308df521576"/>
   <project dest-branch="gatesgarth" name="meta-python2" remote="oe" revision="27d2aebdb4d78a608798a4f617d9bcfcbe4a635b"/>
   <project dest-branch="gatesgarth" name="meta-qt5" remote="qt5" revision="7a9f639fbd632dbe23af95c7b8123a0b907c6179"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="46f227290dc835b5e1275b6a3427a405d593efbe"/>
-  <project dest-branch="master" name="meta-rust" remote="rust" revision="7ff669d8cedd83a2d3efb73073a63b0a7efffddc"/>
-  <project dest-branch="gatesgarth" name="poky" remote="yocto" revision="999af8ca436d1ccc2b545bbba9c7e060bc21dd38">
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="12cbb1daa75b959129120cb8f2f8479550ec2fef"/>
+  <project dest-branch="master" name="meta-rust" remote="rust" revision="c72b2dda3a4f70ed257c7de9bedb4b04732970a4"/>
+  <project dest-branch="gatesgarth" name="poky" remote="yocto" revision="9de9e2e3194525c8eea57ebc3c7396b4695549a7">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="1130199ecf490f6fc3420c8ceb505d5182a63ee1"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="7266565364787845e3b4d677c6c9877e87953848"/>
 </manifest>
