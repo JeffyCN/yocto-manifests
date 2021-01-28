@@ -15,9 +15,9 @@
   <project dest-branch="warrior" name="meta-clang" remote="clang" revision="8f4080a2afa24fdd9df051a5707a38e0af38dd17"/>
   <project dest-branch="warrior" name="meta-openembedded" remote="oe" revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"/>
   <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
-  <project dest-branch="warrior" name="meta-qt5" remote="qt5" revision="6a9de2d841a528bc055140f50e99910fe651c74f"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="46f227290dc835b5e1275b6a3427a405d593efbe"/>
-  <project dest-branch="master" name="meta-rust" remote="rust" revision="7ff669d8cedd83a2d3efb73073a63b0a7efffddc"/>
+  <project dest-branch="warrior" name="meta-qt5" remote="qt5" revision="e49c07f5d6336dd538fdbf0917df9bf2e24c9238"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="12cbb1daa75b959129120cb8f2f8479550ec2fef"/>
+  <project dest-branch="master" name="meta-rust" remote="rust" revision="c72b2dda3a4f70ed257c7de9bedb4b04732970a4"/>
   <project dest-branch="warrior" name="poky" remote="yocto" revision="c8c383d958807b991e31d22f612ba2a81a3860a4">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="1130199ecf490f6fc3420c8ceb505d5182a63ee1"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="7266565364787845e3b4d677c6c9877e87953848"/>
 </manifest>
