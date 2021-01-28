@@ -15,7 +15,7 @@
   <project name="meta-clang" remote="clang" revision="22f0b0eaad454279c604a83dba53be6e6efb1a06" upstream="thud"/>
   <project name="meta-openembedded" remote="oe" revision="446bd615fd7cb9bc7a159fe5c2019ed08d1a7a93" upstream="thud"/>
   <project name="meta-qt5" remote="qt5" revision="1520d5b2b2beec5e1c3209d3178219e93ef08bca" upstream="thud"/>
-  <project name="meta-rockchip" remote="github" revision="382c5109003c402b4e19d0695b9fc5c9861dc274"/>
+  <project name="meta-rockchip" remote="github" revision="19377086af7dae645017ef5457e34ee7ed1acf55"/>
   <project name="meta-rust" remote="rust" revision="0f950f5e333a1c8999320bf18232144f3dd9c80e" upstream="master"/>
   <project name="poky" remote="yocto" revision="390f760d176aba8a320ea66b8112469d89e9e2d4" upstream="thud">
     <linkfile dest="scripts" src="scripts"/>
