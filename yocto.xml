@@ -16,7 +16,7 @@
   <project dest-branch="warrior" name="meta-openembedded" remote="oe" revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"/>
   <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
   <project dest-branch="warrior" name="meta-qt5" remote="qt5" revision="9248dc741f4e051d8d8578b7e04681cbae182c69"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="410aee93678cc49f25b0f2211aca0890075a5271"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="3d6f988c87971ecde8634aebd4a521a90ad76b33"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="318fb46863c0df5001f937bb4ca856491a493725"/>
   <project dest-branch="warrior" name="poky" remote="yocto" revision="d588ff814ddb7e14cabe27e28c6ca710f31d1b70">
     <linkfile dest="scripts" src="scripts"/>
