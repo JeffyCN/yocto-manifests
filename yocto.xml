@@ -11,19 +11,19 @@
   
   <default revision="dunfell" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="d9b0cbeaf4280ff325a15441c701ea1f4a140b17"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="af08b50efd05a422bb70cb271547e87d7c37bde5"/>
   <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8"/>
-  <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="5bba79488b7d393d2258d6e917f7bf7b0d7c4073"/>
+  <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="07dca1e54f82a06939df9b890c6d1ce1e3197f75"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="0d8eb956015acdea7e77cd6672d08dce18061510"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="12cbb1daa75b959129120cb8f2f8479550ec2fef"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="4d55b666870cd818bb98081a9322cb0e5669f294"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="c72b2dda3a4f70ed257c7de9bedb4b04732970a4"/>
-  <project dest-branch="dunfell" name="poky" remote="yocto" revision="7ea41de13774675828239b7738d3f5d70be8b1af">
+  <project dest-branch="dunfell" name="poky" remote="yocto" revision="6e89d668246fb37b2217aae7ae57390e793696d8">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="7266565364787845e3b4d677c6c9877e87953848"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="2cb4aba5babee1211bf26dde9b15b057d6772602"/>
 </manifest>
