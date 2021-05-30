@@ -12,7 +12,7 @@
   <default revision="gatesgarth" sync-c="true" sync-j="8"/>
 
   <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang" revision="master"/>
+  <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-python2" remote="oe"/>
   <project name="meta-qt5" remote="qt5"/>
