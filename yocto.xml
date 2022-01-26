@@ -14,7 +14,6 @@
   <project dest-branch="zeus" name="meta-browser" remote="browser" revision="830ef438e81ba5fc915b1855e69f02b2c286b21a"/>
   <project dest-branch="zeus" name="meta-clang" remote="clang" revision="f5355ca9b86fb5de5930132ffd95a9b352d694f9"/>
   <project dest-branch="zeus" name="meta-openembedded" remote="oe" revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"/>
-  <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
   <project dest-branch="zeus" name="meta-qt5" remote="qt5" revision="91e6e3b1f5aebd17f895caac3dee32a14630da99"/>
   <project dest-branch="master" name="meta-rockchip" remote="github" revision="0ea0ecb18298aad3c58d27e3b6517b8ed85e08ce"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
