@@ -7,20 +7,20 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-
+  
   <default revision="honister" sync-c="true" sync-j="8"/>
-
-  <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-qt5" remote="qt5"/>
-  <project name="meta-rockchip" remote="github"/>
-  <project name="poky" remote="yocto">
+  
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="d25d8ee98a656b2534d0eec6138ef264529fab4f"/>
+  <project dest-branch="honister" name="meta-clang" remote="clang" revision="088904d40231d9e099c2f5039cd3c2bc47d332d1"/>
+  <project dest-branch="honister" name="meta-openembedded" remote="oe" revision="4647e3ea3708d30eeb0149f6d5626c9576bff520"/>
+  <project dest-branch="honister" name="meta-qt5" remote="qt5" revision="b64b0a213240375e697185de06c3f502c65cdee7"/>
+  <project dest-branch="honister" name="meta-rockchip" remote="github" revision="a65e6ec0fc06d5fb9cecb7cc107d9df8cad56e53"/>
+  <project dest-branch="honister" name="poky" remote="yocto" revision="883341e9ca18925b25e879866cca90bb57b552f2">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project name="yocto-conf" path="build/conf" remote="github"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="d1c8505a2cba108f9a74b34137ea323b823d83d7"/>
 </manifest>
