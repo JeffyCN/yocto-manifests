@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="8609d6a9cd0d947b69ec8b39d1a38f339d611636"/>
+  <extend-project dest-branch="gatesgarth" name="yocto-conf" path="build/conf" remote="github" revision="26d5dee946d94a2e296a3e4e5286ce69a071d020"/>
 </manifest>
