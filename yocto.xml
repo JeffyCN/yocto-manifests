@@ -14,6 +14,7 @@
   <project dest-branch="warrior" name="meta-browser" remote="browser" revision="830ef438e81ba5fc915b1855e69f02b2c286b21a"/>
   <project dest-branch="warrior" name="meta-clang" remote="clang" revision="8f4080a2afa24fdd9df051a5707a38e0af38dd17"/>
   <project dest-branch="warrior" name="meta-openembedded" remote="oe" revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"/>
+  <project dest-branch="zeus" name="meta-python2" remote="oe" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
   <project dest-branch="warrior" name="meta-qt5" remote="qt5" revision="c7ec5568d86396de9571e1de111b92c9e6f86f20"/>
   <project dest-branch="master" name="meta-rockchip" remote="github" revision="4d55b666870cd818bb98081a9322cb0e5669f294"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="c72b2dda3a4f70ed257c7de9bedb4b04732970a4"/>
