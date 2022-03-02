@@ -16,7 +16,7 @@
   <project dest-branch="hardknott" name="meta-openembedded" remote="oe" revision="9ee0e08ba2395b9cb93f2273bb1018adb3630407"/>
   <project dest-branch="hardknott" name="meta-python2" remote="oe" revision="810d6d842f103eb59f18b06426106462b15de7e2"/>
   <project dest-branch="hardknott" name="meta-qt5" remote="qt5" revision="a00af3eae082b772469d9dd21b2371dd4d237684"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="0ea0ecb18298aad3c58d27e3b6517b8ed85e08ce"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="6b168c23b8247e9e7e7612686e771722b107a068"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
   <project dest-branch="hardknott" name="poky" remote="yocto" revision="f8298d40148f2754414761a193f52e409ad2c434">
     <linkfile dest="scripts" src="scripts"/>
@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="8609d6a9cd0d947b69ec8b39d1a38f339d611636"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="fddaa563b6cb471eb5f3463a5457568fc499384b"/>
 </manifest>
