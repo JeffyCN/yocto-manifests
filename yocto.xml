@@ -14,7 +14,7 @@
   <project dest-branch="honister" name="meta-clang" remote="clang" revision="088904d40231d9e099c2f5039cd3c2bc47d332d1"/>
   <project dest-branch="honister" name="meta-openembedded" remote="oe" revision="4647e3ea3708d30eeb0149f6d5626c9576bff520"/>
   <project dest-branch="honister" name="meta-qt5" remote="qt5" revision="b64b0a213240375e697185de06c3f502c65cdee7"/>
-  <project dest-branch="honister" name="meta-rockchip" remote="github" revision="a65e6ec0fc06d5fb9cecb7cc107d9df8cad56e53"/>
+  <project dest-branch="honister" name="meta-rockchip" remote="github" revision="23cbc8cea64adc5b07d276c675a14b2da78144d7"/>
   <project dest-branch="honister" name="poky" remote="yocto" revision="883341e9ca18925b25e879866cca90bb57b552f2">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
@@ -22,5 +22,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="d1c8505a2cba108f9a74b34137ea323b823d83d7"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="b15b55391e443b61a52c704b0b41aeb85c73f571"/>
 </manifest>
