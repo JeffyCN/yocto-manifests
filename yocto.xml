@@ -16,7 +16,7 @@
   <project dest-branch="gatesgarth" name="meta-openembedded" remote="oe" revision="f3f7a5f1a4713f145107bb043e0d14cb3a51c62f"/>
   <project dest-branch="gatesgarth" name="meta-python2" remote="oe" revision="d9662a41f67c3425a356bce4ec29f82058127344"/>
   <project dest-branch="gatesgarth" name="meta-qt5" remote="qt5" revision="2b33a5d5e888370bb56685b86aa82b73624f19f0"/>
-  <project dest-branch="gatesgarth" name="meta-rockchip" remote="github" revision="ded5ee2dac6e36904989923f4903999f06a15b1a"/>
+  <project dest-branch="gatesgarth" name="meta-rockchip" remote="github" revision="9a0f8202581f6bd607e99494ba2cf60fdd89cd03"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
   <project dest-branch="gatesgarth" name="poky" remote="yocto" revision="6a751048e50c00261d99c2d8d69534f7a8da38a9">
     <linkfile dest="scripts" src="scripts"/>
@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="gatesgarth" name="yocto-conf" path="build/conf" remote="github" revision="26d5dee946d94a2e296a3e4e5286ce69a071d020"/>
+  <extend-project dest-branch="gatesgarth" name="yocto-conf" path="build/conf" remote="github" revision="c778f2b0dfdfb17464f287f17d6a29a689e08382"/>
 </manifest>
