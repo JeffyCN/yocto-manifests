@@ -16,7 +16,7 @@
   <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="11eae114522a6befa06c7f4021a83bc016133543"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125"/>
-  <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="ded5ee2dac6e36904989923f4903999f06a15b1a"/>
+  <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="9a0f8202581f6bd607e99494ba2cf60fdd89cd03"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
   <project dest-branch="dunfell" name="poky" remote="yocto" revision="6ebb33bdaccaeadff0c85aab27acf35723df00d8">
     <linkfile dest="scripts" src="scripts"/>
@@ -25,5 +25,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="dunfell" name="yocto-conf" path="build/conf" remote="github" revision="26d5dee946d94a2e296a3e4e5286ce69a071d020"/>
+  <extend-project dest-branch="dunfell" name="yocto-conf" path="build/conf" remote="github" revision="c778f2b0dfdfb17464f287f17d6a29a689e08382"/>
 </manifest>
