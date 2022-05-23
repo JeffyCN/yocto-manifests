@@ -10,12 +10,12 @@
   
   <default revision="honister" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="3c81df00f2afbcd646be6aa5346fa16a14d86a6f"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
   <project dest-branch="honister" name="meta-clang" remote="clang" revision="088904d40231d9e099c2f5039cd3c2bc47d332d1"/>
-  <project dest-branch="honister" name="meta-openembedded" remote="oe" revision="061b7fc74f887454251307ef119b808a90654d3f"/>
+  <project dest-branch="honister" name="meta-openembedded" remote="oe" revision="9a0caf5b09e14a28a54c3f8524d97530aeb8152c"/>
   <project dest-branch="honister" name="meta-qt5" remote="qt5" revision="4837db1d965c51e4a2c5971e6a126c896e5b401a"/>
-  <project dest-branch="honister" name="meta-rockchip" remote="github" revision="79bf5d9656d0831722efa9d22eb3665880ee1a6e"/>
-  <project dest-branch="honister" name="poky" remote="yocto" revision="630d754ea3d7206976b1e0f4489e054cdbc08fe8">
+  <project dest-branch="honister" name="meta-rockchip" remote="github" revision="74b3bbb32ff3910c489257af21682d1afad344d4"/>
+  <project dest-branch="honister" name="poky" remote="yocto" revision="17ea8b493d643c966beea306114ffc3a8d809204">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
