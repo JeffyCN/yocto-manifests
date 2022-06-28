@@ -8,9 +8,9 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="master" sync-c="true" sync-j="8"/>
+  <default revision="kirkstone" sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser"/>
+  <project name="meta-browser" remote="browser" revision="master"/>
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-qt5" remote="qt5"/>
