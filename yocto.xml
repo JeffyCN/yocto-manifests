@@ -22,5 +22,7 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project name="yocto-conf" path="build/conf" remote="github"/>
+  <project name="yocto-conf" path="build/conf" remote="github">
+    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+  </project>
 </manifest>
