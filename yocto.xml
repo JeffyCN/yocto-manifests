@@ -11,19 +11,21 @@
   
   <default revision="dunfell" sync-c="true" sync-j="8"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
-  <project dest-branch="dunfell-clang12" name="meta-clang" remote="clang" revision="93552c79eed5daa44a24bf4b7a063a2ade739e97"/>
-  <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="deee226017877d51188e0a46f9e6b93c10ffbb34"/>
+  <project dest-branch="master" name="meta-browser" remote="browser" revision="bc8caee97e739c364b58a6d981a0d8ab83f02bfa"/>
+  <project dest-branch="dunfell-clang14" name="meta-clang" remote="clang" revision="f14170378aa11d2098a4e82baf680a2c53363191"/>
+  <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="9135c7ea7350d5d241f4afc3b28087122ebe2d19"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f"/>
-  <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="0524adb10d80801714c092b2ce715a0dd866bbc1"/>
+  <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="804be2549a32ae7290a5b06884e72bde349f1eaf"/>
   <project dest-branch="test-dunfell" name="meta-rust" remote="rust" revision="e83e2342e921023118831265f06d1c0554d59bf2"/>
-  <project dest-branch="dunfell" name="poky" remote="yocto" revision="02867c90395db2ebfbcaed3d0d813b889978888c">
+  <project dest-branch="dunfell" name="poky" remote="yocto" revision="dbe19706ec01c1eaa1d377a792e7d825054050b0">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
     <linkfile dest="meta-poky" src="meta-poky"/>
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="25897c4376488ff277524d11d31274cf2d4cc1be"/>
+  <project dest-branch="dunfell" name="yocto-conf" path="build/conf" remote="github" revision="23d64c4b7d3ae6aa35df799fc48da29d31e41e62">
+    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+  </project>
 </manifest>
