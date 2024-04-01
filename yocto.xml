@@ -5,19 +5,14 @@
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/JeffyCN/" name="github"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
-  <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
   <default revision="dunfell" sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang" revision="dunfell-clang12"/>
+  <project name="meta-browser" remote="browser"/>
+  <project name="meta-clang" remote="clang" revision="dunfell-clang14"/>
   <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-python2" remote="oe"/>
-  <project name="meta-qt5" remote="qt5"/>
   <project name="meta-rockchip" remote="github"/>
-  <project name="meta-rust" remote="rust" revision="test-dunfell"/>
   <project name="poky" remote="yocto">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
