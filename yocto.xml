@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <notice>Your sources have been sync'd successfully.</notice>
-  <remote fetch="https://github.com/OSSystems" name="browser"/>
-  <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/JeffyCN/" name="github"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
-  <remote fetch="https://github.com/meta-rust" name="rust"/>
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="github" fetch="https://github.com/JeffyCN/"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   
-  <default revision="dunfell" sync-c="true" sync-j="8"/>
+  <default revision="dunfell" sync-j="8" sync-c="true"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="a5a5f277740a8434377f9844c62574efb17a4fa0"/>
-  <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8"/>
-  <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="11eae114522a6befa06c7f4021a83bc016133543"/>
-  <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1"/>
-  <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125"/>
-  <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="9a0f8202581f6bd607e99494ba2cf60fdd89cd03"/>
-  <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
-  <project dest-branch="dunfell" name="poky" remote="yocto" revision="6ebb33bdaccaeadff0c85aab27acf35723df00d8">
-    <linkfile dest="scripts" src="scripts"/>
-    <linkfile dest="bitbake" src="bitbake"/>
-    <linkfile dest="meta-poky" src="meta-poky"/>
-    <linkfile dest=".templateconf" src=".templateconf"/>
-    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
+  <project name="meta-browser" remote="browser" revision="ea731e8d4fd8a0b40448ea286b2c92824ee591cc" dest-branch="dunfell"/>
+  <project name="meta-clang" remote="clang" revision="f14170378aa11d2098a4e82baf680a2c53363191" dest-branch="dunfell-clang14"/>
+  <project name="meta-openembedded" remote="oe" revision="c74ebbddfd9dbe02d3f7422016324451eb218e1e" dest-branch="dunfell"/>
+  <project name="meta-rockchip" remote="github" revision="fdc75c271a5cd99b7d8add13953dcfcfb27e7e25" dest-branch="dunfell"/>
+  <project name="poky" remote="yocto" revision="1c2fbec01fafc81c6cb2e62f8b18625d81a8066a" dest-branch="dunfell">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="dunfell" name="yocto-conf" path="build/conf" remote="github" revision="c778f2b0dfdfb17464f287f17d6a29a689e08382"/>
+  <project name="yocto-conf" path="build/conf" remote="github" revision="73c701c7af2f57b26955a063bc3fbe880e096e2f" dest-branch="dunfell">
+    <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
+  </project>
 </manifest>
