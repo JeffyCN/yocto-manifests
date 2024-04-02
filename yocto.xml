@@ -9,7 +9,7 @@
 
   <default revision="kirkstone" sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser" revision="kirkstone"/>
+  <project name="meta-browser" remote="browser"/>
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-rockchip" remote="github"/>
