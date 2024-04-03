@@ -7,13 +7,12 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="kirkstone" sync-c="true" sync-j="8"/>
+  <default revision="nanbield" sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser"/>
+  <project name="meta-browser" remote="browser" revision="master"/>
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-rockchip" remote="github"/>
-  <project name="meta-lts-mixins" remote="yocto" revision="kirkstone/rust"/>
   <project name="poky" remote="yocto">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
