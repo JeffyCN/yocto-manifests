@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <notice>Your sources have been sync'd successfully.</notice>
-  <remote fetch="https://github.com/OSSystems" name="browser"/>
-  <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/JeffyCN/" name="github"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-
-  <default revision="nanbield" sync-c="true" sync-j="8"/>
-
-  <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-rockchip" remote="github"/>
-  <project name="poky" remote="yocto">
-    <linkfile dest="scripts" src="scripts"/>
-    <linkfile dest="bitbake" src="bitbake"/>
-    <linkfile dest="meta-poky" src="meta-poky"/>
-    <linkfile dest=".templateconf" src=".templateconf"/>
-    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="github" fetch="https://github.com/JeffyCN/"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  
+  <default revision="nanbield" sync-j="8" sync-c="true"/>
+  
+  <project name="meta-browser" remote="browser" revision="81d037b8650a73339dab97ceba9917b1f31ca652" dest-branch="master"/>
+  <project name="meta-clang" remote="clang" revision="b71a45630d19f210079f42f6394cdde65195fb84" dest-branch="nanbield"/>
+  <project name="meta-openembedded" remote="oe" revision="da9063bdfbe130f424ba487f167da68e0ce90e7d" dest-branch="nanbield"/>
+  <project name="meta-rockchip" remote="github" revision="a5d9e4c6b92718f2a967d465a9871b078ba32c0f" dest-branch="nanbield"/>
+  <project name="poky" remote="yocto" revision="7b8aa378d069ee31373f22caba3bd7fc7863f447" dest-branch="nanbield">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="github">
-    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+  <project name="yocto-conf" path="build/conf" remote="github" revision="8b439c96b47d97514f97f7a44aec00b677e0902a" dest-branch="nanbield">
+    <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
