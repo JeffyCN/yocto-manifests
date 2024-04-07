@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <notice>Your sources have been sync'd successfully.</notice>
-  <remote fetch="https://github.com/OSSystems" name="browser"/>
-  <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/JeffyCN/" name="github"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="github" fetch="https://github.com/JeffyCN/"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   
-  <default revision="master" sync-c="true" sync-j="8"/>
+  <default revision="master" sync-j="8" sync-c="true"/>
   
-  <project dest-branch="master" name="meta-browser" remote="browser" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
-  <project dest-branch="master" name="meta-clang" remote="clang" revision="85d956d95401479ca666139e31f662f60c156d5f"/>
-  <project dest-branch="master" name="meta-openembedded" remote="oe" revision="a9e6d16e6640d105ecf3470ab891598034c9ef33"/>
-  <project dest-branch="master" name="meta-qt5" remote="qt5" revision="283dd73e3cda0161970d5fb5f0b757f7b32bcf63"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="86099cc0e149e84b59758e09b3598b358024c620"/>
-  <project dest-branch="master" name="poky" remote="yocto" revision="fdda6460c0821b194fd93baed9d2affbb6d4035b">
-    <linkfile dest="scripts" src="scripts"/>
-    <linkfile dest="bitbake" src="bitbake"/>
-    <linkfile dest="meta-poky" src="meta-poky"/>
-    <linkfile dest=".templateconf" src=".templateconf"/>
-    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
+  <project name="meta-browser" remote="browser" revision="81d037b8650a73339dab97ceba9917b1f31ca652" dest-branch="master"/>
+  <project name="meta-clang" remote="clang" revision="13dcab852c5bcd51fd75ae84ace9eddd99254653" dest-branch="master"/>
+  <project name="meta-openembedded" remote="oe" revision="a6bcdca5b4681906b00e12f6bc4af465c85bad9f" dest-branch="master"/>
+  <project name="meta-rockchip" remote="github" revision="5b589c4174d4dda030f822ec1000cf9921d150e4" dest-branch="master"/>
+  <project name="poky" remote="yocto" revision="110ee701b33600f14e40544bf9354774cd85c5ce" dest-branch="master">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="a08084677f954095c987e91fbe3faf09b5c33113"/>
+  <project name="yocto-conf" path="build/conf" remote="github" revision="a0512eed82855f47f80c9a4c6cdbe11f2637f2d4" dest-branch="master">
+    <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
+  </project>
 </manifest>
