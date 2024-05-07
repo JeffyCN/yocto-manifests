@@ -9,8 +9,8 @@
   
   <default revision="dunfell" sync-j="8" sync-c="true"/>
   
-  <project name="meta-browser" remote="browser" revision="ea731e8d4fd8a0b40448ea286b2c92824ee591cc" dest-branch="dunfell"/>
-  <project name="meta-clang" remote="clang" revision="f14170378aa11d2098a4e82baf680a2c53363191" dest-branch="dunfell-clang14"/>
+  <project name="meta-browser" remote="browser" revision="58bed9feef18f841087d9d3dc18e21e20fbc3c0e" dest-branch="dunfell"/>
+  <project name="meta-clang" remote="clang" revision="e8a5e806b48a36046ef78a95f4d4cd428e8ea4c2" dest-branch="dunfell-clang12"/>
   <project name="meta-openembedded" remote="oe" revision="c74ebbddfd9dbe02d3f7422016324451eb218e1e" dest-branch="dunfell"/>
   <project name="meta-rockchip" remote="github" revision="fdc75c271a5cd99b7d8add13953dcfcfb27e7e25" dest-branch="dunfell"/>
   <project name="poky" remote="yocto" revision="1c2fbec01fafc81c6cb2e62f8b18625d81a8066a" dest-branch="dunfell">
