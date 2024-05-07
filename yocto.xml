@@ -9,7 +9,7 @@
   
   <default revision="dunfell" sync-j="8" sync-c="true"/>
   
-  <project name="meta-browser" remote="browser" revision="ea731e8d4fd8a0b40448ea286b2c92824ee591cc" dest-branch="dunfell"/>
+  <project name="meta-browser" remote="browser" revision="bc8caee97e739c364b58a6d981a0d8ab83f02bfa" dest-branch="dunfell"/>
   <project name="meta-clang" remote="clang" revision="f14170378aa11d2098a4e82baf680a2c53363191" dest-branch="dunfell-clang14"/>
   <project name="meta-openembedded" remote="oe" revision="c74ebbddfd9dbe02d3f7422016324451eb218e1e" dest-branch="dunfell"/>
   <project name="meta-rockchip" remote="github" revision="fdc75c271a5cd99b7d8add13953dcfcfb27e7e25" dest-branch="dunfell"/>
