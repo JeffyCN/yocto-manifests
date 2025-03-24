@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <notice>Your sources have been sync'd successfully.</notice>
-  <remote fetch="https://github.com/OSSystems" name="browser"/>
-  <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/JeffyCN/" name="github"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-
-  <default revision="styhead" sync-c="true" sync-j="8"/>
-
-  <project name="meta-browser" remote="browser" revision="master"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-rockchip" remote="github"/>
-  <project name="poky" remote="yocto">
-    <linkfile dest="scripts" src="scripts"/>
-    <linkfile dest="bitbake" src="bitbake"/>
-    <linkfile dest="meta-poky" src="meta-poky"/>
-    <linkfile dest=".templateconf" src=".templateconf"/>
-    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="github" fetch="https://github.com/JeffyCN/"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  
+  <default revision="styhead" sync-j="8" sync-c="true"/>
+  
+  <project name="meta-browser" remote="browser" revision="27ca52f635a31f5f9762813a8527dd31323549b7" dest-branch="master"/>
+  <project name="meta-clang" remote="clang" revision="c709a5196f1e8654425b43b478064395386c36d4" dest-branch="styhead"/>
+  <project name="meta-openembedded" remote="oe" revision="c93994f1bb601c57548b588d4f77a044d90822cf" dest-branch="styhead"/>
+  <project name="meta-rockchip" remote="github" revision="8a79286185b31dfd964969736ac37819204b570e" dest-branch="styhead"/>
+  <project name="poky" remote="yocto" revision="70dc28ac287bf35541270cae1d99130a0f6b7b5f" dest-branch="styhead">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="github">
-    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+  <project name="yocto-conf" path="build/conf" remote="github" revision="ee550925b3df84f2b5b2ac0b9f4d53872b01b635" dest-branch="styhead">
+    <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
