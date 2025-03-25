@@ -9,18 +9,18 @@
   
   <default revision="master" sync-j="8" sync-c="true"/>
   
-  <project name="meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499" dest-branch="master"/>
-  <project name="meta-clang" remote="clang" revision="835896fc6b2b8862d358f65d8cf229537acdbe1a" dest-branch="master"/>
-  <project name="meta-openembedded" remote="oe" revision="14c7d65643d9da0fdb0e96583961983c45d2e0c8" dest-branch="master"/>
-  <project name="meta-rockchip" remote="github" revision="1494a7bfb3bd51a6355bbae4f8518b9bfebb6a0a" dest-branch="master"/>
-  <project name="poky" remote="yocto" revision="d074707199447a8986798796631846e129972afd" dest-branch="master">
+  <project name="meta-browser" remote="browser" revision="27ca52f635a31f5f9762813a8527dd31323549b7" dest-branch="master"/>
+  <project name="meta-clang" remote="clang" revision="65da70e6ba202b7582b2a3d0cb1fdfa54c9fd55d" dest-branch="master"/>
+  <project name="meta-openembedded" remote="oe" revision="4e47dbbc6e472a7a6b98522bc55a894635373aee" dest-branch="master"/>
+  <project name="meta-rockchip" remote="github" revision="40ec53117d464e9d41177032f779f1ea2344f447" dest-branch="master"/>
+  <project name="poky" remote="yocto" revision="4a093080682ec544902ea7250c6ccbb9bf6e8fce" dest-branch="master">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
     <linkfile src="meta-poky" dest="meta-poky"/>
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="github" revision="528240521a82926e3734cfe1e1a8b02535f3ebd8" dest-branch="master">
+  <project name="yocto-conf" path="build/conf" remote="github" revision="4d69cef3a7d09eaa71ce2aac3a73473ed3c43c06" dest-branch="master">
     <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
