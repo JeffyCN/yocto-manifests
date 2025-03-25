@@ -9,19 +9,19 @@
   
   <default revision="kirkstone" sync-j="8" sync-c="true"/>
   
-  <project name="meta-browser" remote="browser" revision="40ebd7f5088f75560b3a2032e48e614d0428b022" dest-branch="kirkstone"/>
-  <project name="meta-clang" remote="clang" revision="312ff1c39b1bf5d35c0321e873417eb013cea477" dest-branch="kirkstone"/>
-  <project name="meta-lts-mixins" remote="yocto" revision="1a6746a81da4d5bf2e5640fd2fa8f3ea453d40bf" dest-branch="kirkstone/rust"/>
-  <project name="meta-openembedded" remote="oe" revision="8bb16533532b6abc2eded7d9961ab2a108fd7a5b" dest-branch="kirkstone"/>
-  <project name="meta-rockchip" remote="github" revision="a5d9e4c6b92718f2a967d465a9871b078ba32c0f" dest-branch="kirkstone"/>
-  <project name="poky" remote="yocto" revision="1e0d58c53b7d9c3feb631e46666ae7a3e3614253" dest-branch="kirkstone">
+  <project name="meta-browser" remote="browser" revision="935aabcec3c0e665e9a56aed4e5fdd18e9b169e5" dest-branch="kirkstone"/>
+  <project name="meta-clang" remote="clang" revision="4711dd7d3e0b072e40d04aa3f75f7c1ca38e1ff8" dest-branch="kirkstone-clang18"/>
+  <project name="meta-lts-mixins" remote="yocto" revision="77856a90b67834e5acd56eacc5964c0587353aec" dest-branch="kirkstone/rust"/>
+  <project name="meta-openembedded" remote="oe" revision="7e18b3fc774b7efabf9a20ae3cd6abd0e0715b59" dest-branch="kirkstone"/>
+  <project name="meta-rockchip" remote="github" revision="697dcfe9898422540ef611c57ce73d178a6b7e56" dest-branch="kirkstone"/>
+  <project name="poky" remote="yocto" revision="b210ed67de098a78a577baf464fae569d020de62" dest-branch="kirkstone">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
     <linkfile src="meta-poky" dest="meta-poky"/>
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="github" revision="303315344b67633c190a9c6bf66427d48c64f6cd" dest-branch="kirkstone">
+  <project name="yocto-conf" path="build/conf" remote="github" revision="63cdfbaf64f73d83d53c4f82601a941f89607382" dest-branch="kirkstone">
     <linkfile src="rockchip-rk3588-evb.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
