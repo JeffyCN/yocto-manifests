@@ -10,7 +10,7 @@
   <default revision="kirkstone" sync-c="true" sync-j="8"/>
 
   <project name="meta-browser" remote="browser"/>
-  <project name="meta-clang" remote="clang"/>
+  <project name="meta-clang" remote="clang" revision="kirkstone-clang18"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-rockchip" remote="github"/>
   <project name="meta-lts-mixins" remote="yocto" revision="kirkstone/rust"/>
