@@ -10,7 +10,7 @@
   <default revision="scarthgap" sync-c="true" sync-j="8"/>
 
   <project name="meta-browser" remote="browser"/>
-  <project name="meta-clang" remote="clang"/>
+  <project name="meta-clang" remote="clang" revision="scarthgap-clang20"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-rockchip" remote="github"/>
   <project name="meta-lts-mixins" remote="yocto" revision="scarthgap/rust"/>
