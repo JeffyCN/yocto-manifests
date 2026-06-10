@@ -4,23 +4,21 @@
   <remote fetch="https://github.com/OSSystems" name="browser"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/JeffyCN/" name="github"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://git.openembedded.org" name="oe"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
 
   <default revision="master" sync-c="true" sync-j="8"/>
 
-  <project name="meta-browser" remote="browser"/>
-  <project name="meta-clang" remote="clang"/>
-  <project name="meta-openembedded" remote="oe"/>
-  <project name="meta-rockchip" remote="github"/>
-  <project name="poky" remote="yocto">
-    <linkfile dest="scripts" src="scripts"/>
-    <linkfile dest="bitbake" src="bitbake"/>
-    <linkfile dest="meta-poky" src="meta-poky"/>
-    <linkfile dest=".templateconf" src=".templateconf"/>
-    <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
-  </project>
+  <project name="bitbake" path="layers/bitbake" remote="oe"/>
+  <project name="yocto-docs" path="layers/yocto-docs" remote="yocto"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto"/>
+  <project name="meta-browser" path="layers/meta-browser" remote="browser"/>
+  <project name="meta-clang" path="layers/meta-clang" remote="clang"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe"/>
+  <project name="openembedded-core" path="layers/openembedded-core" remote="oe"/>
+  <project name="meta-rockchip" path="layers/meta-rockchip" remote="github"/>
   <project name="yocto-conf" path="build/conf" remote="github">
     <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+    <linkfile dest="oe-init-build-env" src="init-build-env"/>
   </project>
 </manifest>
