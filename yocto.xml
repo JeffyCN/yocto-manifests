@@ -7,9 +7,9 @@
   <remote fetch="https://git.openembedded.org" name="oe"/>
   <remote fetch="https://git.yoctoproject.org" name="yocto"/>
 
-  <default revision="master" sync-c="true" sync-j="8"/>
+  <default revision="wrynose" sync-c="true" sync-j="8"/>
 
-  <project name="bitbake" path="layers/bitbake" remote="oe"/>
+  <project name="bitbake" path="layers/bitbake" remote="oe" revision="2.18"/>
   <project name="yocto-docs" path="layers/yocto-docs" remote="yocto"/>
   <project name="meta-yocto" path="layers/meta-yocto" remote="yocto"/>
   <project name="meta-browser" path="layers/meta-browser" remote="browser"/>
